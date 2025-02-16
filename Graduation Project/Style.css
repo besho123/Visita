@@ -1,0 +1,605 @@
+/* ________________________________ Navbar___________________________________________ */
+body{
+    padding: 0;
+    margin:  0;
+    font-family: Arial, sans-serif; 
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    
+   }
+    .navbar{
+        display: block;
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        background-color: #E9DFD6;
+        padding: 3px;
+        width: 100%;
+        z-index: 5;
+  
+    } 
+    .navbar-brand img{ 
+       display: block;
+       max-width: 100px;
+       height: 80px;
+       width: auto;
+       padding: 5px 0;
+     
+    }
+    @media (max-width: 992px) {
+      .navbar-brand img {
+          max-width: 90px;
+      }
+  }
+  
+  @media (max-width: 768px) {
+      .navbar-brand img {
+          max-width: 80px;
+      }
+  }
+    .navbar-nav .nav-link {
+      position: relative;
+      color: #d66d0d; /* Your link color */
+      font-weight: bold;
+      text-decoration: none;
+      padding-bottom: 5px; /* Adds space for the underline */
+      justify-content: space-between;
+      margin-left: 30px;
+      text-transform: capitalize;
+  
+  }
+  
+  .navbar-nav .nav-link::after {
+      content: '';
+      position: absolute;
+      top: 59px;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 5px;
+      background-color: #d66d0d; /* Color of the underline */
+      transition: width 0.3s ease;
+  }
+  
+  .navbar-nav .nav-link:hover::after {
+      width: 100%; 
+  }
+  
+  .dropdown-menu {
+      border-radius: 10px;
+      padding: 10px;
+      background-color: #f9f9f9; /* Light background color */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 180px;
+      
+  }
+  /* Remove blue background on focus */
+  .dropdown-item:focus, .dropdown-item:active {
+    background-color: transparent !important; /* Or use any other color */
+    color: inherit; /* Retain the original text color */
+    outline: none; /* Remove the outline */
+  }
+  .dropdown-item {
+      color: #6c757d; /* Light gray color for items */
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+  }
+  .dropdown-item:hover {
+    color: #d66d0d;
+  }
+  .dropdown-item i {
+      margin-right: 8px;
+  }
+  .Cust-Login{
+    border: none;
+    color: rgb(110, 110, 138);
+    font-size: 150%;
+    margin-left: 30px;
+  }
+  
+/*________________________________Home container 1___________________________________________ */
+/* Adjust the home-container1 section to prevent overlap */
+.home-container1 {
+    padding-top: 60px; /* Adjust based on your navbar height */
+}
+
+.carousel-item {
+    height: 100vh;
+    background-size: cover;
+  }
+  
+  .carousel-item img {
+    height: 100vh;
+    object-fit: cover;
+  }
+  
+  .carousel-caption {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 35%; /* Responsive width */
+    position: absolute;
+    top: 270px;
+    left: 5%;
+    transform: translate(-5%, -35%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .carousel-caption h5 {
+    color: #D66D0D;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 15px;
+  }
+  
+  .carousel-caption p {
+    color: #333333;
+    font-size: 1rem;
+    padding-top: 3%;
+    font-weight: 500;
+    text-align: left;
+    line-height: 1.5;
+  }
+  
+  .custom-btn-ai {
+    display: flex;
+    background-color: #185632;
+    color: white;
+    padding: 8px 17px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-top: 4%;
+    width: fit-content; 
+    text-decoration: none;
+  }
+  
+  
+  .custom-btn-ai:active {
+    background-color: #185632 !important;
+    color: white !important;
+    outline: none;
+    box-shadow: none;
+  }
+  
+  .custom-btn-ai:hover {
+    background-color: #185632;
+    transform: scale(1.05);
+    color: #fff;
+  }
+  
+  /* Card styles */
+  .card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  
+  .badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 1115px) {
+    .carousel-caption {
+        max-width: 50%; /* Slightly reduce width */
+        max-height: max-content;
+        top: 300px;
+        left: 7%; /* Adjust positioning */
+        padding: 25px; /* Increase padding for emphasis */
+    }
+
+    .carousel-caption h5 {
+        font-size: 2.8rem; /* Increase font size */
+    }
+
+    .carousel-caption p {
+        font-size: 1.1rem; /* Slightly larger text */
+    }
+
+    .custom-btn-ai {
+        font-size: 1rem;
+        padding: 10px 20px; /* Increase padding */
+        width: 220px; /* Adjust width */
+    }
+
+    .card {
+        border-radius: 12px; /* More rounded corners */
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+    }
+
+    .card-title {
+        font-size: 1.2rem; /* Larger text for readability */
+    }
+}
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    .navbar-nav .nav-link {
+        margin-left: 0;
+    }
+  
+    .carousel-caption h5 {
+        font-size: 1.8rem;
+    }
+    .carousel-caption {
+        max-width: 50%;
+        max-height: max-content;
+        top: 20%;
+        left: 5%;
+        transform: translate(-5%, 0%);
+    }
+  
+    .carousel-caption p {
+        font-size: 0.9rem;
+    }
+  
+    .custom-btn-ai {
+        font-size: 0.9rem;
+    }
+  }
+  
+ /* Hide the carousel-caption and create a new caption below the carousel for screens under 576px */
+@media (max-width: 576px) {
+  .carousel-caption {
+      display: none; /* Hide original caption overlay */
+  }
+
+
+  /* Add a new caption container below the carousel */
+  .caption-below-carousel {
+      padding: 20px;
+      text-align: center;
+  }
+
+  .caption-below-carousel h5 {
+      color: #D66D0D;
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+  }
+
+  .caption-below-carousel p {
+      color: #333333;
+      font-size: 1rem;
+      margin: 0 auto;
+      max-width: 90%;
+  }
+
+  .caption-below-carousel .custom-btn-ai {
+      font-size: 1rem;
+      padding: 8px 20px;
+      margin-top: 15px;
+      margin-left: 12%;
+  }
+  /* Container for color blocks */
+.color-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px ;
+}
+
+/* Each color block */
+.color-block {
+  width: 30px; /* Adjust width as needed */
+  height: 8px; /* Adjust height as needed */
+  border-radius: 2px; /* Optional: for rounded corners */
+}
+
+/* Color for each block */
+.green { background-color: #879605; }   /* Adjust the color codes as needed */
+.red { background-color: #e05d4e; }
+.yellow { background-color: #FFD200; }
+.orange { background-color: #FF7D00; }
+
+}
+
+/* ________________________________Home container 2, 3 ,4___________________________________________ */ 
+.home-container2 , .home-container3 , .home-container4 {
+  padding-top: 4%;
+
+}
+
+/* Card sizing for both types */
+.card1, .card2 {
+  flex: 0 0 calc(25% - 15px); /* 4 cards per view */
+  min-width: calc(25% - 15px); /* Fallback */
+}
+.carousel-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding-left: 50px;
+  padding-top: 20px;
+  height: 480px;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: hidden !important;
+  -ms-overflow-style: none;  /* IE/Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.card-carousel {
+  display: flex;
+  height: 450px;
+  gap: 15px;
+  scroll-behavior: smooth;
+  flex-wrap: nowrap; /* Ensure cards stay in a single row */
+  margin: 0 auto;
+  box-sizing: border-box;
+  
+}
+
+.carousel-container::-webkit-scrollbar {
+  display: none;
+}
+
+.card , .card1 , .card2 {
+  position: relative;
+  overflow: hidden;
+  flex: 0 0 calc(25% - 15px); /* 4 cards per view */
+  min-width: calc(25% - 15px); /* Fallback */
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  border-radius: 17px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover , .card1:hover , .card2:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 16px rgba(249, 249, 76, 0.2);
+
+}
+.card img , .card1 img , .card2 img {
+ display: block;
+ object-fit: cover;
+ width: 100%;
+ height: 100%;
+ border-radius: 15px;
+ transition: transform 0.5s ease;
+}
+
+.card-overlay , .card1-overlay , .card2-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+  color: white;
+  font-size: 1rem;
+  text-align: left;
+  border-radius: 15px;
+}
+
+.card-overlay p , .card1-overlay p , .card2-overlay p {
+  margin: 0;
+  transition: transform 0.5s ease; /* Smooth text zoom */
+  font-weight: bold;
+}
+.card:hover img, .card:hover .card-overlay p  , .card1:hover img, .card1:hover .card1-overlay p , .card2:hover img, .card2:hover .card2-overlay p {
+  transform: scale(1.05); /* Ensures the image and text scale up with the card */
+}
+.home-container3 .carousel-container,
+.home-container4 .carousel-container {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+.prev, .next , .prev1, .next1 , .prev2, .next2 {
+  position: relative;
+  left:88vw; /* Move buttons to the right side */
+  background-color: rgba(219, 146, 77, 0.84); /* Dimmed background color */
+  border-radius: 50%; /* Round button */
+  width: 40px; /* Reduced diameter of the circle */
+  height: 40px; /* Reduced diameter of the circle */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  color: #fff; /* Text color */
+  text-decoration: none;
+  font-size: 60px; /* Increased arrow size */
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  border: none;
+  margin: 0 5px; /* Reduced spacing */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform for hover effect */
+  line-height: 15px; /* Match line-height to font-size for better vertical alignment */
+  padding-bottom: 12px;
+
+}
+.prev:focus, .next:focus , .prev1:focus, .next1:focus , .prev2:focus, .next2:focus {
+outline: none; /* White outline when focused */
+}
+
+.prev:hover, .next:hover , .prev1:hover, .next1:hover , .prev2:hover, .next2:hover {
+background-color: #d49933;
+transform:  scale(1.1); /* Slightly larger on hover */
+box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
+}
+
+@media (max-width: 950px) {
+  .prev, .next ,.prev1, .next1 , .prev2, .next2 {
+    left:80vw;
+  }
+  
+}
+@media (max-width: 768px) {
+  .card , .card1 , .card2 {
+    min-width: 50%; /* Show 2 cards on smaller screens */
+  }
+  .prev, .next , .prev1, .next1 , .prev2, .next2 {
+    left:70vw;
+  }
+}
+
+ 
+ @media (max-width: 480px) {
+  .card , .card1 , .card2 {
+    min-width: 100%; /* Show 1 card on very small screens */
+  }
+  .prev, .next , .prev1, .next1 , .prev2, .next2 {
+    visibility: hidden;
+  }
+  .carousel-container {
+    padding-left: 20px;
+} 
+ }
+.trip-inspiration h2 , .explore-egypt h2 , .types-of-tourism h2 {
+  position: relative;
+  top: 50px;
+  margin-left: 50px;
+  font-size: 31px;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+ .trip-inspiration h2::before , .explore-egypt h2::before , .types-of-tourism h2::before {
+  content: '';
+  position: absolute;
+  top: -25px; /* Adjust distance from the text */
+  left: 0;
+  width: 165px; /* Length of the line */
+  height: 15px; /* Thickness of the line */
+  background: linear-gradient(to right,#D4741B, #ee9251); /* Gradient color */
+  box-shadow: #d49933 4px 4px 8px;
+} 
+
+
+/* ------------------------------- REGISTER PAGE -------------------------------- */
+
+.Register-body{
+  background-color: #eeeeee;
+}
+
+.register {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.my-custom-container {
+  max-width: 1000px;
+  background: rgb(247, 246, 246);
+  min-height: 70vh;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin :150px 0  100px;
+}
+
+.Register-image-section {
+  background: url("IMG-20241022-WA0026.jpg") no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+.Register-image-section img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+}
+.Register-image-section .overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 25%;
+  background: rgba(0, 0, 0, 0.514);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.Register-Formm {
+  padding: 40px;
+}
+.Register-Formm p a {
+  color: #b57440;
+  text-decoration: none;
+}
+.Register-Formm input {
+  border-radius: 5px;
+}
+.Register-continue-btn  {
+  background-color: #c9864f !important;
+  color: white !important;
+  border: none;
+  transition: background-color 0.2s ease !important;
+}
+
+.Register-continue-btn:active {
+  background-color: #a56f3a !important;
+}
+
+.Register-continue-btn:hover {
+  background-color: #d3915c;
+  box-shadow: 0 0 10px rgba(110, 103, 93, 0.1);
+  color: white;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+.Register-user-btn {
+color: white !important;
+border: none;
+transition: background-color 0.2s ease !important;
+}
+
+.Register-admin-btn {
+background-color: #d9534f !important; /* Red for Admin */
+color: white !important;
+border: none;
+transition: background-color 0.2s ease !important;
+}
+
+.Register-user-btn:hover {
+background-color: #45a049;
+box-shadow: 0 0 10px rgba(110, 103, 93, 0.1);
+}
+
+.Register-admin-btn:hover {
+background-color: #c9302c;
+box-shadow: 0 0 10px rgba(110, 103, 93, 0.1);
+}
+
+/* _______________________ Footer _____________________________ */
+
+.footer {
+  background-image: url(pyramids-background5.webp);
+  background-color: #313041; 
+  background-position: bottom right;
+  background-repeat: repeat;
+  background-size: cover;
+  padding: 105px 0px 100px 0px;;
+  margin-top: 60px;
+}
+
+.footer ul li {
+margin-bottom: 8px;
+color: #bbb9b9;
+}
+.footer p {
+margin-bottom: 8px;
+color: #bbb9b9;
+}
+
+.footer a {
+color: #bbb9b9;
+}
+.footer a:hover {
+color: #696d72;
+}
+.footer h5 {
+color: #e0e4e9;
+}

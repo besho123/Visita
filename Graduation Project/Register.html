@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup - Visita</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+  />
+    
+    <link rel="stylesheet" href="./Style.css" />
+  </head>
+  <body class="Register-body" >
+    <header>
+      <div class="navbar-container1">
+        <div class="navbar">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+              <a class="navbar-brand" href="./index.html">
+                <img
+                 src="Picture100.png"
+                  title="Home"
+                  alt="Egypt"
+                  height="30px"
+                  width="100"
+              /></a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarnav"
+                aria-controls="navbarnav"
+                aria-expanded="false"
+                aria-label="toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarnav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: #d66d0d">
+                      Places to visit
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: #d66d0d">
+                      Where to stay
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: #d66d0d">
+                      Tour package
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: #d66d0d">
+                      Travel with AI
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <button
+                  class="btn Cust-Login"
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="bi bi-person-circle"></i>
+                  <!-- Bootstrap person icon -->
+                </button>
+                <ul
+                  class="dropdown-menu dropdown-menu-end"
+                  aria-labelledby="dropdownMenuButton"
+                >
+                  <li>
+                    <button class="dropdown-item" data-bs-toggle="modal" data-bs-target="#loginModal">
+                      <i class="bi bi-person"></i>Login</button>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./Register.html"
+                      ><i class="bi bi-person-plus-fill"></i> Register</a
+                    >
+                  </li>
+                </ul>
+                <div id="loginModal" class="modal fade" tabindex="-1"  data-bs-backdrop="false" aria-labelledby="loginModalLabel" aria-hidden="true" >
+                  <div class="modal-dialog">
+                    <div class="modal-content p-3">
+                      <!-- Close Button -->
+                      <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                      <div class="modal-header border-0 justify-content-center">
+                        <h3 class="fw-bold text-center">Sign-in</h3>
+                      </div>
+                      <div class="text-center">
+                        <hr style="width: 50px; height: 4px; background-color: #ff7300; border: none; border-radius: 50px ; margin-top: -10px;margin-left: auto; margin-right: auto;">
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                          <div class="mb-4">
+                            <label for="username" class="form-label fw-bold">Username</label>
+                            <input type="text" class="form-control" id="username" placeholder="Username">
+                          </div>
+                          
+                          <div class="mb-4">
+                            <label for="password" class="form-label fw-bold">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="******" >
+                          </div>
+                          <div class="d-flex justify-content-around ">
+                            <a href="./index.html" class="btn w-45 text-white" style="background-color: #2C3E50  ;" id="userLogin">Login as User</a>
+                            <a href="#" class="btn w-45 text-white" style="background-color: #F39C12  ;" id="adminLogin">Login as Admin</a>
+                          </div>
+                        </form>
+                        <div class="text-center mt-4">
+                          <a href="#" class="text-decoration-none" style="color:#e28b39">Lost your password?</a>
+                        </div>
+                        <div class="text-center mt-3">
+                          Don't have an account? <a href="#" class="text-decoration-none "  style="color:#e28b39">Register</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                 </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+  <section class="register">
+    <div class="container my-custom-container d-flex px-0">
+      <div class="col-md-6 Register-image-section d-none d-md-block">
+        <div class="overlay">
+          <h5>Welcome to Visita</h5>
+          <p>Sign up to explore</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 form-section Register-Formm ">
+        <h3 class="mb-4">Create your free account!</h3>
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Username" />
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Email" />
+          </div>
+          <div class="mb-3">
+            <input type="number" class="form-control" placeholder="Phone" />
+          </div>
+          <div class="mb-3">
+            <select class="form-control">
+                <option value="" disabled selected>Select Country</option>
+                <option>United States</option>
+                <option>Canada</option>
+                <option>United Kingdom</option>
+                <option>Australia</option>
+                <option>Germany</option>
+                <option>France</option>
+                <!-- Add more countries as needed -->
+            </select>
+        </div>
+          <div class="mb-3">
+            <input
+              type="password"
+              class="form-control"
+              placeholder="Password"
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="password"
+              class="form-control"
+              placeholder="Confirm Password"
+            />
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="rememberMe" />
+            <label class="form-check-label" for="rememberMe">Remember me</label>
+          </div>
+        
+          <div class="d-flex gap-3">
+            <a href="/index.html" class="btn btn-custom Register-user-btn w-100" style="background-color: #e28b39">Sign Up</a>
+        </div>
+        
+        </form>
+        <p class="text-center mt-4">
+          Already have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Log In</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        
+        <!-- Column 1: Logo & Paragraph -->
+        <div class="col-md-4 ">
+          <img src="Picture1.png" alt="Visita Logo"  width="300">
+
+        </div>
+        
+        <!-- Column 2: Navigation Links -->
+        <div class="col-md-4 mt-5">
+          <h5 class="fw-bold ">Quick Links</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2 mt-4">
+            <li><a href="./index.html" class="text-decoration-none ">Home</a></li>
+            <li><a href="#" class="text-decoration-none ">Places to visit</a></li>
+            <li><a href="#" class="text-decoration-none ">Where to Stay</a></li>
+            <li><a href="#" class="text-decoration-none ">Travel with AI</a></li>
+            <li><a href="#" class="text-decoration-none ">Trip Inspiration</a></li>
+          </ul>
+        </div>
+        
+        <!-- Column 3: Contact Information -->
+        <div class="col-md-4 mt-5">
+          <h5 class="fw-bold">Contact Us</h5>
+          <ul class="list-unstyled  d-flex flex-column gap-2 mt-4">
+            <li><i class="fas fa-map-marker-alt"></i> Cairo, Egypt</li>
+            <li><i class="fas fa-envelope"></i> contact@visita.com</li>
+            <li><i class="fas fa-phone"></i> +20 123 456 789</li>
+          </ul>
+        </div>
+  
+      </div>
+    </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./main.js"></script>
+  </body>
+</html>
